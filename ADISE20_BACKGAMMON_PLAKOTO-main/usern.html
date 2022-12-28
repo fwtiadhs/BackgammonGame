@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-ui-1.12.1/jquery-3.5.1.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+	<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<link href="jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <script src="js/myplakoto.js"></script>
+	
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="nav-container">
+            <nav>
+                <h1 id="logo"><a href="./index.html">Home</a></h1>
+                <ul>
+                    <li><a href="#Play" class="play">Play</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="usern">
+            
+            <div class="userInput_test">
+                <div id="plakoto_board" class="table1">
+                        
+                    
+                </div>
+                <div class="bottom1">
+				    <div id="game_info" class="divLetter"></div>
+				    <div id="game_initializer" class="divLetter">
+				
+                    <input id="username" type="text" class="inputU" maxlength="16"></input> <br>
+                    <select id="pcolor" class="selectU">
+                        <option value="B">Black</option>
+                        <option value="W">White</option>
+                    </select>
+                    <select class="selectU">
+                        <option value="">Online</option>
+                        <option value="">Offline</option>
+                    </select><br>
+                    <button id="plakoto_login" class="buttonU">Ξεκινα το παιχνιδι</button>
+                    
+                 </div>   
+                </div> 
+                <div class="bottom2">
+                    <button class="buttonU" onclick="rollDice()" id="ButtonZ">Roll the dice</button>
+                    <div class="divLetter" id="idZari">0 0</div>
+                    
+                    <div class="exitGame">  
+                        <button id='plakoto_reset' class='buttonU'>End Game</button><br>
+                    </div>
+                </div>
+                <div id="move_div" class="bottom3">
+                    <div  class="divLetter">Δώσε κίνηση (x1 y1 x2 y2):</div><br>
+                    <input type="text" class="inputU" style="size: 16;" id="the_move"></input> 
+                    <button class="buttonU" id="do_move">Move</button><br>
+                    ώσε κίνηση (x1 y1): <input id='the_move_src'> (x2 y2):
+                    <select id='the_move_dest'></select>
+                    <button id='do_move2' class='btn btn-primary'>ΚΑΝΕ ΤΗΝ ΚΙΝΗΣΗ 2</button><br>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer>
+            <h1>Copyright © Team Fwtia 2020</h1>
+            <ul>
+                <li>
+                    <a href="https://youtube.com"><img src="./img/yt-logo.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com"><img src="./img/twitter-logo.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com"><img src="./img/instagram-logo.png" alt=""></a>
+                </li>
+            </ul>
+        </footer>
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="./js/anime2.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 8rem;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 3.5rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+p{
+    font-size: 2.5rem;
+}
+
+li {
+    font-size: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    min-height: 10vh;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    Ul{
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        list-style: none;
+    }
+    
+    #logo {
+        flex: 4;
+        position: relative;
+    }
+}
+
+
+
+footer {
+    background-color: rgb(7, 7, 7);
+    min-height: 10vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    ul {
+        display: flex;
+        flex: 1;
+        list-style: none;
+        justify-content: space-between;
+    }
+    h1 {
+        flex: 3;
+    }
+}
+
+
+@import "home";
+@import "about";
+@import "usern"; 
+
+
